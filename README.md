@@ -68,13 +68,13 @@ Exported cleaned data for Power BI integration.
 ## Tools & Technologies
 - Powerquery
 - Power BI: Interactive dashboard design
-- Dataset: [Social Media Advertising Dataset on Kaggle](https://docs.google.com/spreadsheets/d/1fBQQTx94zQ3pIbZSWcy5U7GXiAY07fa0/edit?usp=sharing&ouid=113280610288310962621&rtpof=true&sd=true)
+- Dataset: [HR Dataset](https://docs.google.com/spreadsheets/d/1fBQQTx94zQ3pIbZSWcy5U7GXiAY07fa0/edit?usp=sharing&ouid=113280610288310962621&rtpof=true&sd=true)
 
 ---
 
 ## Feedback
 
-If you have any suggestions or feedback, feel free to open an issue or connect with me on [LinkedIn](www.linkedin.com/in/sohilakhaledabbas).
+If you have any suggestions or feedback, feel free to open an issue or connect with me on [LinkedIn](https://www.linkedin.com/in/safaali-da/).
 
 ---
 
