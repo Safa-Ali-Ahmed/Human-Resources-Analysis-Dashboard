@@ -1,70 +1,53 @@
-# Social Media Advertising Dashboard
+# Human Resources Analysis Dashboard
 
 ## Description
-This repository contains a **comprehensive Power BI dashboard** for analyzing social media advertising campaigns. It includes data cleaning with Python, exploratory visualizations, and a multi-page Power BI dashboard focusing on campaign performance, audience engagement, and channel effectiveness. The dashboard is designed to analyze campaign performance, audience engagement, and channel effectiveness based on data from January 2022 to December 2022. It provides actionable insights for marketers, analysts, and decision-makers to optimize advertising strategies.
+This repository contains a **comprehensive Power BI dashboard** for analyzing social media advertising campaigns. It includes data cleaning with Powerquery, exploratory visualizations, and a multi-page Power BI dashboard focusing on Human Resources Performance. The dashboard is designed to analyze HR based on data from January 2006 to December 2012. It provides actionable insights for marketers, analysts, and decision-makers to optimize advertising strategies.
 
 ## Features
 
-### 1. Data Cleaning Using Python
-- Cleaned the dataset with Python (`pandas`, `numpy`).
-- Key steps:
-  - Filled missing ROI values with the mean.
-  - Converted `Acquisition_Cost` to a numeric format.
-  - Created a new feature: `Total_Spend` (Clicks × Acquisition_Cost).
-  - Converted the `Date` column to datetime format.
-  - Exported cleaned data for Power BI integration.
+### 1. Data Cleaning Using Powerquery
+check missing values and remove blank rows
+Change columns data types to correct one.
+renamed columns correctly.
+Exported cleaned data for Power BI integration.
+
+![Campaign Overview](https://github.com/Safa-Ali-Ahmed/Human-Resources-Analysis-Dashboard/blob/main/Screen%20Shoots/HomePage.PNG)
 
 ---
 
 ### 2. Power BI Dashboard
-#### 1. **Campaign Overview**
+#### 1. **HR Overview**
 - **Key Visualizations:**
-  - **Total Campaigns:** 300,000 campaigns analyzed.
-  - **Total Acquisition Cost:** $2.3 billion.
-  - **Top Segment:** Health.
-  - **ROI Trend:** Average ROI of 3.18, with trends from January 2022 to December 2022.
-  - **Top 5 Companies by ROI:** Attire Artistry, Balance Beam, Culinary Quest, Space Spruce, and Style Sphere.
-  - **Campaign Distribution by Customer Segment:** Health (19.98%), Home (20.03%), Food (19.98%), Fashion (20.02%), Technology (20.02%).
+ 1-Employee Overview 🔽 
+ ▪️️ Total Employees & Positions: 31 positions across 6 departments.
+ ▪️ Absences & Terminations: 3,184 absences and 104 terminations.
+ ▪️ Employee Citizenship: Majority are US Citizens.
 
-![Campaign Overview](Screenshots/campaign_overview.png)
+![Campaign Overview](https://github.com/Safa-Ali-Ahmed/Human-Resources-Analysis-Dashboard/blob/main/Screen%20Shoots/Overview.PNG)
 
 ---
 
-#### 2. **Campaign Performance Analysis**
+#### 2. **HR Details**
 - **Key Visualizations:**
-  - **Total Clicks:** 5 billion.
-  - **Total Impressions:** 17 billion.
-  - **Total Conversions:** 436.01 million.
-  - **Top Spender:** Space Spruce ($1.15 trillion).
-  - **Distribution of Campaign Goals:** Brand Awareness (75,248 campaigns), Increase Sales, Market Expansion, Product Launch.
-  - **ROI by Company:** Attire Artistry had the highest ROI (323.46%).
+2-Key Insights 🔽 
+ ▪️ Production has the highest employees (209) and most absences.
+ ▪️ Data Analyst is the most common job role (27 employees).
+ ▪️ Average Salary: $69.02K
+ ▪️ Employee Satisfaction Score: 1,210/2,420.
 
-![Campaign Performance](Screenshots/campaign_performance.png)
+![Campaign Performance](https://github.com/Safa-Ali-Ahmed/Human-Resources-Analysis-Dashboard/blob/main/Screen%20Shoots/Details.PNG)
 
 ---
 
-#### 3. **Audience Segmentation and Engagement**
+#### 3. **HR Reasons**
 - **Key Visualizations:**
-  - **Total Target Audience Reached:** 300,000.
-  - **Most Popular Campaign Goal:** Brand Awareness.
-  - **Location with Highest ROI:** New York.
-  - **Average Engagement Score:** 4.37.
-  - **Engagement Score Over Months:** Peaked from December 2022 to January 2022 (10.00).
-  - **Target Audience by Campaign Goal:** Women 18-24 (33.6%), Men 25-34 (23.8%), Women 25-34 (23.8%).
+ 3-Trends & Concerns 🔽 
+ ▪️ Terminations peaked around 2010-2012, mostly due to unhappiness, career changes, and attendance issues.
+ ▪️ More female absences (1,806) than males (1,378).
+ ▪️ Recruitment sources: Indeed, LinkedIn, and Google Search are most effective.
 
-![Audience Segmentation](Screenshots/audience_segmentation.png)
+![Audience Segmentation](https://github.com/Safa-Ali-Ahmed/Human-Resources-Analysis-Dashboard/blob/main/Screen%20Shoots/Reasons.PNG)
 
----
-
-#### 4. **Channel Performance Comparison**
-- **Key Visualizations:**
-  - **Total Impressions:** 17 billion (Facebook: 4.4 billion, Instagram: 3.0 billion, Twitter: 2.0 billion, Pinterest: 1.58 billion).
-  - **Total Clicks:** 5 billion (Facebook: 1.52 billion, Instagram: 1.52 billion, Twitter: 1.52 billion, Pinterest: 0.85 billion).
-  - **Total Conversions:** 436.01 million.
-  - **Total Spend Across Channels:** $55 trillion.
-  - **Top Performer:** Facebook (1.52 billion clicks).
-
-![Channel Performance](Screenshots/channel_performance.png)
 
 ---
 
@@ -76,44 +59,19 @@ This repository contains a **comprehensive Power BI dashboard** for analyzing so
 ## How to Use
 1. Clone the repository:
    ```bash
-   git clone https://github.com/sohilakhaledabbas/social-media-advertising-dashboard.git
+   git clone https://github.com/Safa-Ali-Ahmed/Human-Resources-Analysis-Dashboard.git
    ```
 2. Open the `Dashboard.pbix` file in Power BI Desktop.
 3. Explore the pages and interact with the visualizations.
 
-## Insights Derived
-- Campaign ROI analysis by company.
-- Audience engagement trends over time.
-- Channel effectiveness comparison.
-- Geographical distribution of campaign performance.
 
 ## Tools & Technologies
-- Python: pandas, numpy, matplotlib, seaborn
+- Powerquery
 - Power BI: Interactive dashboard design
-- Dataset: [Social Media Advertising Dataset on Kaggle](https://www.kaggle.com/datasets/jsonk11/social-media-advertising-dataset/data)
+- Dataset: [Social Media Advertising Dataset on Kaggle](https://docs.google.com/spreadsheets/d/1fBQQTx94zQ3pIbZSWcy5U7GXiAY07fa0/edit?usp=sharing&ouid=113280610288310962621&rtpof=true&sd=true)
 
 ---
 
-## Python Code for Data Cleaning
-```python
-# Import necessary libraries
-import pandas as pd
-import numpy as np
-
-# Load the dataset
-file_path = r"Social_Media_Advertising.csv"
-df = pd.read_csv(file_path)
-
-# Data Cleaning
-df['ROI'].fillna(df['ROI'].mean(), inplace=True)
-df['Acquisition_Cost'] = df['Acquisition_Cost'].replace('[\$,]', '', regex=True).astype(float)
-df['Date'] = pd.to_datetime(df['Date'])
-df['Total_Spend'] = df['Acquisition_Cost'] * df['Clicks']
-
-# Save the cleaned dataset
-df.to_csv("Social_Media_Advertising_Cleaned.csv", index=False)
-```
----
 ## Feedback
 
 If you have any suggestions or feedback, feel free to open an issue or connect with me on [LinkedIn](www.linkedin.com/in/sohilakhaledabbas).
